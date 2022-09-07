@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form Data</title>
+</head>
+<style>
+    main {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .form_container {
+        background-color: darksalmon;
+        padding: 20px;
+        margin-top: 100px;
+    }
+</style>
+
+<body>
+    <main>
+
+        <section class="form_container">
+            <h2>Local storage Study</h2>
+            <p>Check result inside local storage</p>
+            <div class="name_input">
+                <input id="name" type="text" placeholder="Name">
+                <button onclick="nameSubmit()">Submit</button>
+                <button onclick="deleteName()">Delete Item</button>
+            </div>
+            <br>
+            <div class="email_input">
+                <input id="email" type="email" placeholder="Email">
+                <button onclick="emailSubmit()">Submit</button>
+                <button onclick="deleteEmail()">Delete Item</button>
+            </div>
+            <br>
+            <div class="comment_area">
+                <textarea name="" id="comment" cols="30" rows="10" placeholder="Comments"></textarea>
+                <button onclick="textSubmit()">Submit</button>
+                <button onclick="deleteComment()">Delete Item</button>
+            </div>
+            <button onclick="resetValue()">Reset All</button>
+            <button onclick="allValue()">Save All</button>
+        </section>
+    </main>
+
+    <script src="./input.js"></script>
+</body>
+
+</html>
